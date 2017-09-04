@@ -1,0 +1,202 @@
+// body {
+//     visibility: hidden;
+// }
+// .print {
+//     visibility: visible;
+//     background-color: #fff;
+//     color: #222;
+// }
+@media print {
+    /* All your print styles go here */
+    // body {
+    //     display: none !important;
+    // }
+    body * {
+        font-size: 11px !important;
+        line-height: 12.5px;
+        color: #000 !important;
+        background-color: #fff !important;
+    }
+    h1 {
+        font-size: 18px !important;
+    }
+    h2 {
+        font-size: 16px !important;
+    }
+    h3 {
+        font-size: 14px !important;
+        margin: 5px 0;
+        font-weight: bold;
+    }
+    h4 {
+        font-size: 12px !important;
+        font-weight: bold;
+    }
+    img {
+        max-width: 50%;
+        height: auto;
+    }
+    body .content,
+    body .bookingstep .content {
+        background: none !important;
+        background-color: #fff !important;
+    }
+    body * {
+        box-sizing: border-box;
+    }
+    // header,
+    // footer * {
+    //     visibility: hidden;
+    //     height: 0;
+    //     // display: none !important;
+    // }
+    // body .bstavke {
+    //     padding: 0;
+    //     margin: 0;
+    // }
+    // .book-assistance {
+    //     & a:after {
+    //         content: " (" attr(href) ") ";
+    //         font-size: 0.8em;
+    //         font-weight: normal;
+    //     }
+    // }
+    // body .promoizlet {
+    //     display: block;
+    // }
+    // .izletsingle *,
+    // .cloned,
+    // .owl-stage-outer,
+    // .owl-nav,
+    // .owl-dots {
+    //     visibility: hidden;
+    //     height: 0;
+    //     // display: none !important;
+    // }
+    // .izletsingle .printwrap {
+    //     display: block !important;
+    //     height: 0;
+    //     margin-top: 0;
+    //     visibility: visible;
+    // }
+    // // .izletsingle .content *.print,
+    // // .izletsingle .content .print *,
+    // // .print,
+    // // .print * {
+    // body .printwrap,
+    // body .print {
+    //     display: block !important;
+    //     height: auto !important;
+    //     margin-top: 0;
+    //     visibility: visible;
+    //     background-color: #fff;
+    //     color: #222;
+    //     & .printlink {
+    //         display: none !important;
+    //     }
+    //     & table {
+    //         display: table !important;
+    //         border-spacing: 0px;
+    //     }
+    //     & tr {
+    //         display: table-row !important;
+    //         padding-bottom: 15px;
+    //     }
+    //     & td {
+    //         display: table-cell !important;
+    //         padding: 5px;
+    //     }
+    //     & .c1,
+    //     .c2 {
+    //         border: 1px #333 dotted;
+    //     }
+    //     // & .c1 {
+    //     //     // width:25%;
+    //     // }
+    //     & .c2 {
+    //         width: 74%;
+    //     }
+    //     & .c4 {
+    //         width: 30%;
+    //     }
+    //     & .c3 {
+    //         width: 70%;
+    //     }
+    // }
+    // body .print * {
+    //     visibility: visible !important;
+    //     height: auto;
+    // }
+    // .content * .nika {
+    //     overflow: visible;
+    //     height: auto !important;
+    //     max-height: 999999px;
+    // }
+    // .content .remember {
+    //     visibility: hidden;
+    //     height: 0;
+    //     display: none !important;
+    // }
+    // body div,
+    // body section,
+    // body header,
+    // body article,
+    // body nav {
+    //     visibility: hidden;
+    //     height: 0;
+    //     overflow: hidden;
+    //     padding: 0;
+    //     margin: 0;
+    //     & p {
+    //         visibility: hidden;
+    //     }
+    // }
+    // body.printwrap,
+    // body *.printwrap {
+    //     display: block !important;
+    //     height: 0;
+    //     margin-top: 0;
+    //     visibility: visible;
+    // }
+    *.printwrap>*:not(.print):not(.printwrap) {
+        display: none !important;
+        visibility: hidden;
+        padding: 0;
+        margin: 0;
+        height: 0;
+    }
+    *.printwrap>*.printwrap {
+        display: block !important;
+        // height: 0;
+        margin-top: 0;
+        visibility: visible;
+    }
+    *.printwrap *.print {
+        display: block !important;
+        height: auto;
+        margin-top: 0;
+        visibility: visible;
+        width: 98%;
+        max-width: 98%;
+    }
+    * .harmo:after {
+        display: none;
+    }
+    * .nika {
+        display: block !important;
+        overflow: visible;
+        height: auto !important;
+        max-height: 999999px;
+    }
+    * .printlink {
+        display: none;
+    }
+    * .remember {
+        visibility: hidden;
+        height: 0;
+        display: none !important;
+    }
+    * .bstavke {
+        padding: 15px 0;
+    }
+}

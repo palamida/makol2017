@@ -1,0 +1,102 @@
+    .blogsvi {
+        background-color: #f0f0f0;
+        background: linear-gradient(0deg, tint($plava, 80) 1%, #f0f0f0 50%, tint($plava, 60) 99%);
+        & .content {
+            width: 100%;
+            margin: 20px auto;
+            @include breakpoint($tablet) {
+                width: 90%;
+                max-width: 1200px;
+            }
+        }
+    }
+    
+    .blog {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        & article {
+            box-sizing: border-box;
+            padding: 20px;
+            border: 1px dotted $plava;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            width: 90%;
+            @include breakpoint($tablet) {
+                width: 45%;
+            }
+            @include breakpoint($large) {
+                width: 30%;
+            }
+            // @include breakpoint($wide) {
+            //     width: 20%;
+            // }
+            margin: 10px;
+            transition: all 0.2s ease-in-out;
+            text-align: center;
+            & figure {
+                width: 100%;
+                height: auto;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+            & img {
+                transition: all 0.2s ease-in-out;
+                max-width: 100%;
+                height: auto;
+            }
+            & h2 {
+                margin: 10px 0 0;
+                line-height: 1.2em;
+                font-weight: normal;
+            }
+            & h3 {
+                margin: 0;
+                font-weight: normal;
+                font-size: 0.8em;
+                color: $siva
+            }
+            &:hover {
+                background-color: #fff;
+                img {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+    
+    .blogsingle {
+        background-color: #fff;
+        @include breakpoint($tablet) {
+            background-color: #f0f0f0;
+            background: linear-gradient(0deg, tint($plava, 80) 1%, #f0f0f0 50%, tint($plava, 60) 99%);
+        }
+    }
+    
+    .blogsingle .content {
+        background: #fff;
+        padding-top: 3em;
+        width: 100%;
+        margin: 20px auto;
+        @include breakpoint($tablet) {
+            width: 90%;
+            max-width: 1200px;
+        }
+        & p,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        & img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 2em;
+            margin-bottom: 2em;
+        }
+    }

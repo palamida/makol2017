@@ -1,0 +1,24 @@
+{
+    "name": "makol",
+    "description": "internet stranica makol.hr",
+    "main": "index.js",
+    "authors": [
+        "Marko Srdoc <marko@makol.hr>"
+    ],
+    "license": "ISC",
+    "homepage": "",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "normalize-css": "^4.1.1"
+    },
+    "devDependencies": {
+        "susy": "^2.2.12",
+        "breakpoint-sass": "^2.7.0"
+    }
+}

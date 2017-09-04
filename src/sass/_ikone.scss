@@ -1,0 +1,81 @@
+@import "sprite";
+$ieSprite: '.lt-ie9' !default;
+$sprite: map-get($icons, sprite) !default;
+$baseFontSize: 16px !default;
+@import "mixins";
+// .sm a {
+//   text-indent:-200%;
+//   font-size:1.5em;
+//   margin-right: 0.2em;
+//   overflow:hidden;
+//   transition: all 0.2s linear;
+//   &:hover {
+//     transform: scale(1.3);
+//   }
+// }
+// .sm .facebook {
+//   @include sprite(facebook,all);
+// }
+// .sm .linkedin {
+//   @include sprite(linkedin,all);
+// }
+// .sm .youtube {
+//   @include sprite(youtube,all);
+// }
+// .sm .twitter {
+//   @include sprite(twitter,all);
+//     margin-right:0;
+// }
+// Ikone Naslovnica / Feature menu 1
+.brod .izletbrief {
+    &:before {
+        @include sprite(brod-bijeli);
+    }
+}
+
+// .brod.bojazuta,
+// .brod.bojabijela {
+//     & .izletbrief:before {
+//         @include sprite(brod-plavi);
+//     }
+// }
+.bus .izletbrief:before {
+    @include sprite(bus-bijeli);
+}
+
+.selfdrive .izletbrief:before {
+    @include sprite(selfdrive-bijeli);
+}
+
+// .bus.bojazuta,
+// .bus.bojabijela {
+//     & .izletbrief:before {
+//         @include sprite(bus-plavi);
+//     }
+// }
+.sn-fb {
+    @include sprite(sn-facebook, all);
+}
+
+.sn-yb {
+    @include sprite(sn-youtube, all);
+}
+
+.sn-in {
+    @include sprite(sn-instagram, all);
+}
+
+// .class {
+// 	&:before {
+// 		@include sprite(twitter);
+// 		content: '';
+// 		float: left;
+// 		margin-right: 0.5em;
+// 	}
+//
+// 	&:hover {
+// 		&:before {
+// 			@include sprite(twitterHover, bg);
+// 		}
+// 	}
+// }

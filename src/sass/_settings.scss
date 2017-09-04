@@ -1,0 +1,79 @@
+@charset "UTF-8";
+// ----------------------
+// == Site settings
+// ----------------------
+// Fonts
+$fontglavni2: 'PT Sans Narrow',
+Helvetica,
+Arial,
+sans-serif;
+$fontglavni: 'Open Sans',
+Helvetica,
+Arial,
+sans-serif;
+$fontglavni3: 'PT Sans',
+Helvetica,
+Arial,
+sans-serif;
+$fontskriptni: 'Kaushan Script',
+cursive,
+Times,
+Georgia,
+serif;
+// = Colors
+// -----------------------------
+//
+// Colors, etc.
+//
+$plava: rgb(0, 158, 225); // plava
+$mplava: rgb(0, 114, 188); // more plava
+$tplava: rgb(16, 44, 105); // tamno plava
+$zuta: rgb(255, 202, 0); // zuta
+$zelena-buton: rgb(82, 136, 58); // zelena buton
+$zelena: rgb(99, 179, 64); // zelena
+$siva: rgb(109, 110, 113);
+$ssiva: rgb(203, 202, 201);
+$crvena: rgb(249, 36, 96);
+// Text
+$color-text-base: $tplava;
+// link
+$color-link: $plava;
+$color-link-hover: $siva;
+// = Grid
+// -----------------------------
+// Max width wrapper
+$wrapper-width: pxtoem(1140, 16);
+// breakpoints
+$mobile: screen 480px;
+$tablet: screen 769px;
+$large: screen 960px;
+$wide: 1200px;
+$izbornik: $wide;
+$vodoravni: (orientation landscape);
+$okomiti: (orientation portrait);
+// box sizing pollyfill path
+// $box-sizing-polyfill-path: "../boxsizing.htc";
+// = Responsive
+// -----------------------------
+// $width-large: 75em; // 1200/16
+// $width-medium: 62em; // 992/16
+// $width-small: 48em; // 768/16
+// susy swettings
+$susy: ( columns: 12, gutters: 1/5, math: fluid, output: float, gutter-position: inside, );
+/// Slightly lighten a color
+/// @access public
+/// @param {Color} $color - color to tint
+/// @param {Number} $percentage - percentage of `$color` in returned color
+/// @return {Color}
+@function tint($color, $percentage) {
+    @return mix(white, $color, $percentage);
+}
+
+/// Slightly darken a color
+/// @access public
+/// @param {Color} $color - color to shade
+/// @param {Number} $percentage - percentage of `$color` in returned color
+/// @return {Color}
+@function shade($color, $percentage) {
+    @return mix(black, $color, $percentage);
+}
